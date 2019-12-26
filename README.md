@@ -21,5 +21,4 @@
 
 <blockquote> цитата </blockquote>
 
-[ссылочка]
-[Текст ссылки](адрес://ссылки.здесь "Заголовок ссылки")
+[ссылочка](https://ru.wikipedia.org/wiki/Markdown)
