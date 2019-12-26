@@ -24,6 +24,6 @@
 [ссылочка](https://ru.wikipedia.org/wiki/Markdown)
 
 
-Column | Column
+Первая колонка | Вторая колонка
 ------ | ------
-Cell   | Cell  
+тут текст   |  
