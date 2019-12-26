@@ -19,5 +19,6 @@
 ### fgfgd
 #### ghghf
 
-> цитата
+<blockquote> цитата </blockquote>
+
 [ссылочка]
