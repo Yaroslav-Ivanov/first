@@ -24,4 +24,6 @@
 [ссылочка](https://ru.wikipedia.org/wiki/Markdown)
 
 
-pandoc --lua-filter table.lua input.md -o output.html
+Column | Column
+------ | ------
+Cell   | Cell  
