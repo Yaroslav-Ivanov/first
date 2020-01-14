@@ -12,10 +12,25 @@
     $proc = 11.5;
     $stav = 1; 
 
-    for (; $stav <= 14; $stav++) {
+    // for (; $stav <= 14; $stav++) {
+    //     $money = $money + ($money * (($proc / 12) / 100 ));
+    // }
+    // echo  $money;
+
+
+
+    // while($stav <= 14){
+    //     $money = $money + ($money * (($proc / 12) / 100 ));
+    //     $stav++;
+    // }
+    // echo $money;
+    
+
+    do{
         $money = $money + ($money * (($proc / 12) / 100 ));
-    }
-    echo  $money;
+        $stav++;
+    } while($stav <= 14);
+    echo $money;
 ?>
 </body>
 </html>
