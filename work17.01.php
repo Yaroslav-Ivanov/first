@@ -50,5 +50,17 @@
     echo $b;
     echo "<br>";
     ?>
+
+       <!-- Статические переменные -->
+<?php
+    function Test2(){
+        static $a = 0;
+        echo $a;
+        $a++;
+    }
+
+    Test2 (5);
+    echo $a;
+    ?>
 </body>
 </html>
