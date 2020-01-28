@@ -8,7 +8,10 @@
 </head>
 <body>
     <?php
-    file_put_contents('forma.txt', "form" . "\n", FILE_APPEND);
+    $a = $_POST['text'];
+    $b = $_POST['mail'];
+    $res = "-------". "\n". $a. "\n". "-------". "\n". $b. "\n";
+    file_put_contents('forma.csv', "$res" . "\n", FILE_APPEND);
     ?>
 </body>
 </html>
