@@ -8,7 +8,11 @@
 </head>
 <body>
    <?php
-    echo $_POST ['numb1'] * $_POST ['numb2'];
+    echo  $_POST ['numb1'] * $_POST ['numb2'];
+    $a = $_POST ['numb1'];
+    $b = $_POST ['numb2'];
+    $c = $_POST ['numb1'] * $_POST ['numb2'];
+    file_put_contents('calc.txt', "$a * $b = $c". "\n", FILE_APPEND);
    ?>
 </body>
 </html>
