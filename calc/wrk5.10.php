@@ -13,26 +13,26 @@
 
     $a = $_POST['numb1'];
     $b = $_POST['numb2'];
-
+    $s = $_POST['s'];
     switch ($_POST['s']) {
-        case 2:
+        case '/':
             $c = $a / $b;
             break;
-        case 3:
+        case '+':
             $c = $a + $b;
             break;
-        case 4:
+        case '-':
             $c = $a - $b;
             break;
-        case 1:
+        case '*':
         default:
             $c = $a * $b;
             break;
     }
 
-    echo $str = "$c". "\n";
+    echo "$c";
 
-    file_put_contents('calc.txt', "$c" . "\n", FILE_APPEND);
+    file_put_contents('calc.txt', "$a $s $b = $c" . "\n", FILE_APPEND);
     ?>
 </body>
 
