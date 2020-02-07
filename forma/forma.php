@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-     
-     echo $a = file_get_contents("counter.txt") +1;
-     file_put_contents("counter.txt", $a);
-     ?>
+    <?php
+    $a = $_POST['text'];
+    $b = $_POST['mail'];
+    $res = "-------". "\n". $a. "\n". "-------". "\n". $b. "\n";
+    file_put_contents('forma.csv', "$res" . "\n", FILE_APPEND);
+    ?>
 </body>
 </html>

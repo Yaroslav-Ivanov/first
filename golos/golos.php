@@ -7,10 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-     
-     echo $a = file_get_contents("counter.txt") +1;
-     file_put_contents("counter.txt", $a);
-     ?>
+    <?php
+    $i = $_POST['s'];
+   
+    $arr = explode(';', file_get_contents('golos.csv'));
+    $arr[$i]++;
+    file_put_contents('golos.csv', implode(";", $arr));
+    
+
+    foreach($arr as $key=>$value){
+        echo "$key - $value<br>";
+    }
+    ?>
 </body>
 </html>
