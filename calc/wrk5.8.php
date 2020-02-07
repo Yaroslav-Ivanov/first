@@ -8,7 +8,8 @@
 </head>
 <body>
    <?php
-    echo $_POST ['numb1'] * $_POST ['numb2'];
+    echo $_POST ['numb1'] * $_POST ['numb2'] file_put_contents("calc.txt", $_POST);
+    
    ?>
 </body>
 </html>
