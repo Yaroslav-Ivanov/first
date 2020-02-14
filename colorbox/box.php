@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="rect.css">
+    <link rel="stylesheet" href="box.css">
 </head>
 
 <body>
-    <div class="rectangle" style="width: <?= $_GET['a']?>px; height: <?= $_GET['b']?>px; background-color: <?= $_GET['color']?>"></div>
+    <div class="colbox" style="width: <?= $_GET['a']?>px; height: <?= $_GET['b']?>px; background-color: <?= $_GET['color']?>"></div>
     <?php
     // print_r($_GET);
     $first = $_GET['a'];
